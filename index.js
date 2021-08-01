@@ -27,7 +27,7 @@ application.get("/", function(req, res){
 // Alteração no banco de dados, de 0 para 1 na steamhex escolhida.
 application.post("/aprovar", function(req, res){
     if(req.body.steamhex != ""){
-        knex("users").where({nome_coluna_steamhex: steamhex}).update({nome_coluna_valor_whitelisted: 1}).then(data => {
+        knex("users").where({nome_coluna_steamhex: req.body.steamhex}).update({nome_coluna_valor_whitelisted: 1}).then(data => {
             console.log(data);
         }).catch(err => {
             console.log(err);
