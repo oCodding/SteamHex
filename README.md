@@ -17,3 +17,5 @@ Digite os seguintes comandos:
 O comando "nodemon index.js" serve para iniciar a execução do projeto.
 
 Para abrir o projeto basta navegar até: http://localhost:8081/
+
+Créditos: LETUGAHHHHHHH#1843
