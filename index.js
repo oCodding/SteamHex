@@ -37,5 +37,5 @@ application.post("/aprovar", function(req, res){
     };
 });
 
-// Conexão aplicação
+// Conexão da aplicação
 application.listen(8081);
