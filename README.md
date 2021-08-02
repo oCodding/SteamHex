@@ -12,6 +12,8 @@ Digite os seguintes comandos:
 
 `npm install knex --save`
 
+`npm install -g nodemon --save`
+
 `nodemon index.js`
 
 O comando "nodemon index.js" serve para iniciar a execução do projeto.
