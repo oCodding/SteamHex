@@ -16,13 +16,11 @@ var knex = require("knex")({
 module.exports = knex;
 
 // Configuração [handlebars, bodyParser].
-application.engine("handlebars", handlebars({defaultLayout: "main"}));
+application.engine("handlebars", handlebars.engine({defaultLayout: "main"}));
 application.set("view engine", "handlebars");
 application.use(bodyParser.urlencoded({extended: false}));
 application.use(bodyParser.json());
-application.get("/", function(req, res){
-    res.render("forming");
-});
+application.get("/", function(req, res){res.render("forming")});
 
 // Alteração no banco de dados, de 0 para 1 na steamhex escolhida.
 application.post("/aprovar", function(req, res){
@@ -33,7 +31,7 @@ application.post("/aprovar", function(req, res){
             console.log(err);
         });
     }else{
-        console.log("Não foi preenchido o campo da SteamHex.");
+        console.log("O campo da SteamHex não foi preenchido.");
     };
 });
 

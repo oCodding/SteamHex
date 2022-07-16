@@ -1,0 +1,25 @@
+{
+  "name": "steamhex",
+  "version": "1.0.0",
+  "description": "Tenha o node instalado em seu computador. (https://nodejs.org/en/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oCodding/SteamHex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oCodding/SteamHex/issues"
+  },
+  "homepage": "https://github.com/oCodding/SteamHex#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "knex": "^2.1.0",
+    "mysql2": "^2.3.3"
+  }
+}
